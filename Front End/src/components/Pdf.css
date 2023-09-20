@@ -1,0 +1,57 @@
+/* Pdf.css */
+
+/* Container for the entire PDF viewer */
+.pdf-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar containing file input, toolbar, and page count */
+.pdf-sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar button {
+  padding: 10px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toolbar button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-count {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* PDF window */
+.pdf-window {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* Add any additional styling you need */
