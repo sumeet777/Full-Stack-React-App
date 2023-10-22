@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -11,11 +12,9 @@ app.use(express.urlencoded({ extended: false }));
 const jwt = require("jsonwebtoken");
 var nodemailer = require("nodemailer");
 
-const JWT_SECRET =
-  "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi78272jbkj?[]]pou89ywe";
+const JWT_SECRET = process.env.JWT_SECRET;
 
-const mongoUrl =
-  "mongodb+srv://sumeetghodmare77:sumeet12345@cluster0.vlteuuz.mongodb.net/?retryWrites=true&w=majority";
+const mongoUrl = process.env.MONGO_URL;
 
 mongoose
   .connect(mongoUrl, {

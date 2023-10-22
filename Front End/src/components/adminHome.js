@@ -93,6 +93,7 @@ export default function AdminHome({ userData }) {
             <th>Name</th>
             <th>Email</th>
             <th>User Type</th>
+            <th>Pages Uploaded</th>
             <th>Delete</th>
           </tr>
           {data.map((i) => {
@@ -101,6 +102,7 @@ export default function AdminHome({ userData }) {
                 <td>{i.fname}</td>
                 <td>{i.email}</td>
                 <td>{i.userType}</td>
+                <td></td>
                 <td>
                   <FontAwesomeIcon
                     icon={faTrash}
